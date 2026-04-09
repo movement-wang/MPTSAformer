@@ -1,0 +1,97 @@
+PEMS03:
+  in_steps: 12
+  out_steps: 12
+  mask_ratio: 0.25
+  pretrain_length: 288
+  time_of_day: True
+  day_of_week: True
+  lr: 0.001
+  weight_decay: 0.0015
+  milestones: [20, 50]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 20
+
+  TSAformer_args:
+    num_nodes: 358
+    in_steps: 12
+    out_steps: 12
+    input_dim: 1
+    output_dim: 1
+    input_embedding_dim: 32
+    tod_embedding_dim: 32
+    dow_embedding_dim: 32
+    spatial_embedding_dim: 32
+    adaptive_embedding_dim: 128
+    long_history_embedding_dim: 128
+    feed_forward_dim: 512
+    num_heads: 4
+    num_layers: 3
+    dropout: 0.1
+
+
+PEMS04:
+  in_steps: 12
+  out_steps: 12
+  mask_ratio: 0.25
+  pretrain_length: 864
+  time_of_day: True
+  day_of_week: True
+  lr: 0.001
+  weight_decay: 0.001
+  milestones: [15, 50]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 20
+
+  TSAformer_args:
+    num_nodes: 307
+    in_steps: 12
+    out_steps: 12
+    input_dim: 1
+    output_dim: 1
+    input_embedding_dim: 32
+    tod_embedding_dim: 32
+    dow_embedding_dim: 32
+    spatial_embedding_dim: 32
+    adaptive_embedding_dim: 128
+    long_history_embedding_dim: 128
+    feed_forward_dim: 512
+    num_heads: 4
+    num_layers: 3
+    dropout: 0.1
+
+
+PEMS08:
+  in_steps: 12
+  out_steps: 12
+  mask_ratio: 0.25
+  pretrain_length: 864
+  time_of_day: True
+  day_of_week: True
+  lr: 0.001
+  weight_decay: 0.0015
+  milestones: [25, 45]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 20
+
+  TSAformer_args:
+    num_nodes: 170
+    in_steps: 12
+    out_steps: 12
+    input_dim: 1
+    output_dim: 1
+    input_embedding_dim: 32
+    tod_embedding_dim: 32
+    dow_embedding_dim: 32
+    spatial_embedding_dim: 32
+    adaptive_embedding_dim: 128
+    long_history_embedding_dim: 128
+    feed_forward_dim: 512
+    num_heads: 4
+    num_layers: 3
+    dropout: 0.1
